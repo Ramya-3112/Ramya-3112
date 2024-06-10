@@ -1,0 +1,9 @@
+def are_strings_balanced(s1, s2):
+    return set(s1.lower()) <= set(s2.lower())
+
+# Read input
+s1 = input().strip()
+s2 = input().strip()
+
+# Check if strings are balanced
+print(are_strings_balanced(s1, s2))
