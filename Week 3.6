@@ -1,0 +1,8 @@
+def chinese_zodiac(year):
+    animals = ['Dragon','Snake','Horse','Sheep','Monkey','Rooster','Dog','Pig','Rat','Ox','Tiger','Hare']
+    start_year = 2000  
+    index = (year - start_year) % 12
+    return animals[index]
+year = int(input())
+animal = chinese_zodiac(year)
+print(f"{year} is the year of the {animal}.")
