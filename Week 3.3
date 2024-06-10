@@ -1,0 +1,15 @@
+def days_in_month(month):
+    if month.lower() in ['january', 'march', 'may', 'july', 'august', 'october', 'december']:
+        return 31
+    elif month.lower() in ['april', 'june', 'september', 'november']:
+        return 30
+    elif month.lower() == 'february':
+        return "28 or 29"
+    else:
+        return "Invalid input"
+month = input()
+days = days_in_month(month)
+if days != "Invalid input":
+    print(f"{month.capitalize()} has {days} days in it.")
+else:
+    print("Invalid input. Please enter a valid month name.")
