@@ -1,0 +1,17 @@
+# Read input
+n = int(input().strip())  # Number of elements in the array
+
+# Initialize an empty dictionary to store the frequencies
+frequency = {}
+
+# Read elements of the array and count frequencies
+for _ in range(n):
+    num = int(input().strip())
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+# Print the frequencies
+for key, value in frequency.items():
+    print(f"{key} occurs {value} times")
