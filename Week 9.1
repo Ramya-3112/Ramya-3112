@@ -1,0 +1,15 @@
+def automorphic(number):
+    if number < 0:
+        return "Invalid input"
+
+    square = number * number
+    
+  
+    num_last_digits = number % 10
+    square_last_digits = square % (10 ** len(str(number)))
+    
+   
+    if num_last_digits == square_last_digits:
+        return "Automorphic"
+    else:
+        return "Not Automorphic"
